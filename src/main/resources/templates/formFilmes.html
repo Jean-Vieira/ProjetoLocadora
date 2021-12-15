@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title id="title">
+        Filmes
+    </title>
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+	</head>
+		
+	<body class="forms">
+	
+	<div class="centoContainer">
+    
+		<div id="wrapper" >
+
+			<div id="wrappermiddle">
+				
+					<form th:object="${filme}" th:action="@{/salvar}" id="filmesForm" method="post" name="filmesForm">
+						<h2 style="text-align: center">Filmes</h2>
+			
+					<div class="entradaText" id="">
+						<label for="idFilme">ID
+							<input class="css-input" id="idFilme" maxlength="3" name="idFilme"  size="5" type="text"  placeholder="Digite o ID">
+							
+						</label>
+					</div>
+					
+					<div class="entradaText">
+						<label for="titulo">Título
+						<input class="css-input" id="titulo" maxlength="60" name="titulo" size="30" type="text" placeholder="titulo do filme">
+						
+						</label>
+					</div>
+					
+					<div class="entradaText">
+						<label for="valor">Valor Locação
+						<input class="css-input" id="valor" maxlength="60" name="valor" size="10" type="text" placeholder="Valor Locação em R$">
+						
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="direcao">Direção
+						<input class="css-input" id="direcao" maxlength="60" name="direcao" size="30" type="text" placeholder="Direção">
+						
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="atores">Atores Pricipais
+						<input class="css-input" id="atores" maxlength="60" name="atores" size="30" type="text" placeholder="Atores Pricipais">
+						
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="categoria">Categoria
+							<select class="css-input" name="categoria" id="categoria" >
+								<option selected value="acao">Ação</option>
+								<option value="comedia">Comédia</option>
+								<option value="drama">Drama</option>
+								<option value="terror">Terror</option>
+								<option value="comediaRomantica">Comédia Romântica</option>
+								<option value="suspense">Suspense</option>
+								<option value="aventura">Aventura</option>
+								<option value="ficcao">Ficção Científica</option>
+								<option value="animacao">Animação</option>
+
+								Ficção Científica
+						</select>
+						
+						</label>
+					</div>
+					<div class="entradaText">
+						<label for="censura">Censura
+							<select class="css-input" name="censura" id="censura" >
+									<option selected value="0">Livre</option>
+									<option value="10 anos">10 anos</option>
+									<option value="12 anos">12 anos</option>
+									<option value="14 anos">14 anos</option>
+									<option value="16 anos">16 anos</option>
+									<option value="18 anos">18 anos</option>
+							</select>
+					</label>
+					</div>
+					
+					<div class="entradaText">
+						<label for="dublado">Dublado
+							<input class="css-input" type="radio" name="dublado" id="cSim" value="Sim"><label for="cSim" >Sim  </label><br>
+							<input class="css-input" type="radio" name="dublado" id="cNao"  value="Não" checked> <label for="cNao">Não</label>				
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="legendado">Legendado
+							<input class="css-input" type="radio" name="legendado" id="cSim" value="Sim" ><label for="cSim" >Sim  </label><br>
+							<input class="css-input" type="radio" name="legendado" id="cNao"  value="Não" checked> <label for="cNao">Não</label>
+						
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="sinopse">Sinopse
+						<input class="css-input" id="sinopse" maxlength="60" name="sinopse" size="30" type="text" placeholder="Sinopse do filme">
+						
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="cartaz">Cartaz<br>
+  						<input type="file" id="cartaz" name="cartaz" accept="image/*"  onchange="onFileSelected(event)" ><br>
+						
+						</label>
+						
+					</div>
+					<div id="disp_tmp_path"></div>
+					<script>
+						function mostraImagem(){
+													}
+						
+						function onFileSelected(event) {
+  							var selectedFile = event.target.files[0];
+							var reader = new FileReader();
+
+							var imgtag = document.getElementById("troca");
+							imgtag.title = selectedFile.name;
+
+							reader.onload = function(event) {
+								imgtag.src = event.target.result;
+							};
+
+							reader.readAsDataURL(selectedFile);
+							
+						}
+		
+					</script>
+					<img id="troca" src="aa" style = "height:200px;">
+
+					<div class="submitCad">
+						<input class="btn" id="filmesForm:button_cad" name="filmesForm:button_cad"  type="submit" value="Cadastrar">
+					</div>
+
+					<div class="submitCons">
+						<input class="btn" id="filmesForm:button_cons" name="filmesForm:button_cons"  type="submit" value="Consultar">
+					</div>
+					<div class="submitAtual">
+						<input class="btn" id="filmesForm:button_atual" name="filmesForm:button_atual"  type="submit" value="Atualizar">
+					</div>
+					<div class="submitExcl">
+						<input class="btn" id="filmesForm:button_excl" name="filmesForm:button_excl"  type="submit" value="Excluir">
+					</div>
+				</form>
+			
+			</div>
+	
+			
+			
+		</div>
+        </div>
+		
+	
+</body>
+</html>

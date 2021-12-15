@@ -1,0 +1,77 @@
+*{margin:0px; padding:0px; }/*Removendo margens Externas e internas*/
+body{line-height:20px; font-size:80%; background-color:#dcdcdc;} /* Corpo de página a 70% do tamanho oinal, altura de linha 20pixels, cor de fundo*/
+h1,h2,h3,h4,h5,h6{font-size:150%;}/*Tamanho dos titulos 150% do tamanho original*/
+ul,ol{	list-style:none;}/*Removendo os simbolos das listas ordenadas e não-ordenadas*/
+
+/*----- Meu reset de Tags principais------*/
+
+.global
+{
+position:absolute; display:block;  width:1000px;left:50%; margin-left:-520px; margin-top:10px; background-color:rgba(138, 138, 41, 0.205); padding: 0px 20px 20px 20px;
+ 
+}
+
+.q_direita, .q_esquerda, .anuncios, .artigos, .destaques, .foto-destaque, .rodape
+	{
+		position:relative; float:left;
+	}
+.anuncios
+	{
+		width:120px;margin-top:20px; background-color:rgba(37,89,166,0.2);
+	}
+.anuncios img
+{
+	width:110px;
+	height:150px;
+}/*Altera tamanho das imagens do anuncio para 110px*/
+
+.foto-destaque{ height:auto; background-color:rgba(0,255,0,0.1);}
+.q_esquerda{width:28%;background-color:rgb(150,150,150);margin-right:1%; height: 560px;}
+.q_direita{width:69%;background-color:rgb(150,150,150);margin-left:1%; padding-left:1%; height: 560px;}
+.menu{width:960px; background-color:LightSteelBlue; padding:12px 20px; margin-bottom:15px;}
+.topo{width:1000px; text-align:center; height:266px; background-color:rgb(150,150,150);height:auto;}
+.topo img{width:100%;}
+.rodape{width:1000px; height:30px; background-color:rgba(37, 89, 166,0.5); color:#fff; margin-top:20px; height:auto;}
+.rodape p{margin:5px 20px; }
+.destaques{width:670px; background-color:rgba(37,89,166,0.5); padding-bottom:20px;}
+.a1{height:530px;}
+.a2{width:inherit;  height:490px;}
+.foto-destaque img{ height:180px;}
+.foto-destaque{ display:inline;}
+.informativo{width:265px; padding-bottom:5px;height:auto;margin-left: 10px;}
+.artigos{width:325px; background-color:rgba(37,89,166,0.5); margin:25px 20px 0 0; padding-bottom:25px;height: 250px;}	
+
+
+.esquerdaN{margin-left:17px;}
+.direitaN{margin-right:17px;}
+.artigos p{margin:0 17px;}
+.caixa_des{margin: 0px 0px 0px 20px; float:left; width: 70%;}
+.menu li{display:inline; border-right:2px dotted red; padding-right:5px;font-size:16px}
+.menu li:last-child{border:0px;}
+li{margin-left: 10px;}
+
+.artigos p{margin:0 17px;}
+h1{font:bold 20px Verdana, Arial, sans-serif; margin:17px 0 8px 0; color:#fff;}
+h2{font:bold 16px Verdana, Arial, sans-serif; margin:9px 0 7px 17px; color:#fff;}
+h5, h4 , h6{font:bold 20px Verdana, Arial, sans-serif; text-transform:uppercase; 
+padding:8px 20px; background:#2559a6; color:#fff;}
+h4{font-size:16px;}
+h6{font-size:12px; margin:35px 0px 8px 0px; padding:2px; text-align:center;}
+p{font:12px Verdana, Arial, sans-serif;  color:#fff;}
+
+
+.leiamais{ float:right; background-color:#999999; font:10px Verdana, Arial, sans-serif; text-transform:uppercase; color:#000000; padding:2px 3px; margin:10px 20px 0px 0px; display:inline;}
+
+a:link { color: rgb(254, 254, 255) } /* links não visitados */
+a:visited { color: rgb(230, 215, 15) } /* links visitados */
+a:hover {  color: rgb(238, 10, 40); font-weight: bold } /* user hovers */
+a:active { color: lime } /* links ativos */
+
+.css-frames{
+	width: 670px;
+	border: none;
+	height: 530px;
+	
+}
+
+/*Estilos de tabelas*/

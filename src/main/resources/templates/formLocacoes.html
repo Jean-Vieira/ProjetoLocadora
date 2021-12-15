@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title id="title">
+        Filmes
+    </title>
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+	</head>
+		
+	<body class="forms">
+	
+	<div class="centoContainer">
+    
+		<div id="wrapper" >
+
+			<div id="wrappermiddle">
+				
+					<form action="mailto:jean.vieira@ufn.edu.br" enctype="text/plain" id="filmesForm" method="post" name="locacaoForm">
+						<h2 style="text-align: center">Locaçoes</h2>
+			
+					<div class="entradaText" id="">
+						<label for="idLocacao">ID
+							<input class="css-input" id="idLocacao" maxlength="3" name="idLocacao"  size="5" type="text"  placeholder="Digite o ID">
+							
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="dataLocac">Data da locação
+						<input class="css-input" id="dataLocac" maxlength="60" name="dataLocac" size="30" type="date" placeholder="Data de locação">
+						
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="idCliente">ID Cliente
+							<select class="css-input" name="idCliente" id="idCliente" >
+									<option value="">Busca do banco de dados</option>
+									<option value="">Busca do banco de dados</option>
+							</select>
+					</label>
+					</div>
+					
+					<div class="entradaText">
+						<label for="nome">Nome Cliente
+						<input class="css-input" id="nome" maxlength="60" name="nome" size="30" type="text" placeholder="Nome">
+						</label>
+					</div>
+					<div class="entradaText">
+						<label for="telefone">Telefone
+						<input class="css-input" id="telefone" maxlength="60" name="telefone" size="30" type="tel" placeholder="(12) 34567-8901" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" required>
+						
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="idFilme">ID do Filme
+							<select class="css-input" name="idFilme" id="idFilme" >
+									<option value="">Busca do banco de dados</option>
+									<option value="">Busca do banco de dados</option>
+							</select>
+					</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="titulo">Título
+						<input class="css-input" id="titulo" maxlength="60" name="titulo" size="30" type="text" placeholder="titulo do filme" va>
+						
+						</label>
+					</div>
+
+					<div class="entradaText">
+						<label for="valor">Valor Locação
+						<input class="css-input" id="valor" maxlength="60" name="valor" size="10" type="text" placeholder="Valor Locação em R$">
+						
+						</label>
+					</div>
+
+				
+					<div style="margin-bottom: 30px;"></div>
+
+					<div class="submitCad">
+						<input class="btn" id="locacaoForm:button_cad" name="locacaoForm:button_cad"  type="submit" value="Cadastrar">
+					</div>
+
+					<div class="submitCons">
+						<input class="btn" id="locacaoForm:button_cons" name="locacaoForm:button_cons"  type="submit" value="Consultar">
+					</div>
+					<div class="submitAtual">
+						<input class="btn" id="locacaoForm:button_atual" name="locacaoForm:button_atual"  type="submit" value="Atualizar">
+					</div>
+					<div class="submitExcl">
+						<input class="btn" id="locacaoForm:button_excl" name="locacaoForm:button_excl"  type="submit" value="Excluir">
+					</div>
+				</form>
+			
+			</div>
+	
+			
+			
+		</div>
+        </div>
+		
+	
+</body>
+</html>

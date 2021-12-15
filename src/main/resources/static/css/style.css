@@ -1,0 +1,183 @@
+/* Stylesheet / CSS */
+
+/* CSS Reset - Do not edit this line */ 
+html {margin:0;padding:0;border:0;}
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section 
+{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}body {line-height:1.5;background:white;}table {border-collapse:separate;border-spacing:0;}caption, th, td {text-align:left;font-weight:normal;float:none !important;}table, th, td {vertical-align:middle;}blockquote:before, blockquote:after, q:before, q:after {content:'';}blockquote, q {quotes:"" "";}a img {border:none;}:focus {outline:0;}
+
+
+/* General Styles
+----------------------------------------------------------------------------------------------------*/
+
+.forms {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888;
+	font-size: 13px;
+	line-height: 20px;
+	min-width: 998px;
+	border-top:3px solid #919191;
+	background-color: rgb(198, 212, 230);
+
+}
+
+#wrapper {
+	width: 500px;
+	/*margin:auto;*/
+	padding: 20px 0 0 0px;
+	height: 100%;
+	position: relative;
+}
+
+
+#wrapper h2 {
+	margin-left:20px;
+	margin-top: -20px;
+	font-size:20px;
+	font-weight:bold;
+	font-family:Myriad Pro;
+	text-transform:none;
+	position:absolute;
+	text-shadow: #fff 2px 2px 2px;
+}
+
+label{
+	position: absolute;
+	float: inherit;
+	margin-top: 0px;
+}
+
+.entradaText {
+	margin-left:25px;
+	position:relative;
+	width:400px;
+	height:50px;
+	margin-top:20px;
+}
+
+
+
+/*
+#password_input {
+	margin-left:25px;
+	position:absolute;
+	width:300px;
+	height:50px;
+	margin-top:120px;
+}
+*/
+
+
+#url_user {
+	position:absolute;
+	display:block;
+	margin-top:-277px;
+	margin-left:-243px;
+	float:left;
+	padding-right:10px;
+	transform: scale(0.03, 0.03);
+}
+#url_password {
+	display:block;
+	position:absolute;
+	margin-top:-32px;
+	margin-left:13px;
+	float:left;
+}
+
+.submit{
+	float:left;
+	position:relative;
+	padding:0;
+	margin-top:30px;
+	margin-left:25px;
+	width:300px;
+	height:40px;
+	border:0;
+}
+
+.submitCad{
+	position:absolute;
+	padding:0;
+	margin-top:20px;
+	margin-left:130px;
+	width:0px;
+	height:40px;
+	border:0;
+}
+
+.submitCons{
+	position:absolute;
+	padding:0;
+	margin-top:20px;
+	margin-left:260px;
+	width:0px;
+	height:40px;
+	border:0;
+}
+
+.submitAtual{
+	position:absolute;
+	padding:0;
+	margin-top:20px;
+	margin-left:380px;
+	width:0px;
+	height:40px;
+	border:0;
+}
+.submitExcl{
+	position:absolute;
+	padding:0;
+	margin-top:20px;
+	margin-left:480px;
+	width:0px;
+	height:40px;
+	border:0;
+}
+
+.btn {
+  float:right;
+  margin-right:5px;
+  background: #2559a6;
+  background-image: -webkit-linear-gradient(top, #2559a6, rgba(119, 170, 246, 0.5));
+  background-image: -moz-linear-gradient(top, #2559a6, rgba(119, 170, 246, 0.5));
+  background-image: -ms-linear-gradient(top,  #2559a6, rgba(119, 170, 246, 0.5));
+  background-image: -o-linear-gradient(top, #2559a6, rgba(119, 170, 246, 0.5));
+  background-image: linear-gradient(to bottom,  #2559a6,rgba(119, 170, 246, 0.5));
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 6px 15px 6px 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(119, 170, 246, 0.5);
+  background-image: -webkit-linear-gradient(top, rgba(119, 170, 246, 0.5),LightSteelBlue);
+  background-image: -moz-linear-gradient(top, rgba(119, 170, 246, 0.5),LightSteelBlue);
+  background-image: -ms-linear-gradient(top,rgba(119, 170, 246, 0.5),LightSteelBlue);
+  background-image: -o-linear-gradient(top, rgba(119, 170, 246, 0.5),LightSteelBlue);
+  background-image: linear-gradient(to bottom, rgba(119, 170, 246, 0.5),LightSteelBlue);
+  text-decoration: none;
+}
+
+
+ .css-input { 
+ border-width:2px; 
+ border-color:#cccccc; 
+ border-style:solid; 
+ box-shadow:inset 0px 0px 6px 0px rgba(42,42,42,.21); 
+ font-size:15px; 
+ padding:10px 10px 10px 30px; 
+ border-radius:6px;  
+ width:85%;
+ } 
+ .css-input:focus { 
+ outline:none; 
+ } 
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/estilizacao.css">
+	</head>
+	<body>
+		<main class="global">
+			<header class="topo">
+				<img src="imagens/logo.png">
+			</header>
+			<nav class="menu">
+				<ul>
+					<li><a href="#" title="Home">Home</a></li>
+					<li><a href="#" title="Sobre">Sobre Nós</a></li>
+					<li><a href="#" title="Serviços">Serviços</a></li>
+					<li><a href="#" title="Agenda">Agenda Horários</a></li>
+					<li><a href="#" title="Contato">Contato</a></li>
+				</ul>
+			</nav>
+			<section class="q_esquerda">
+				<aside class="informativo">
+					<h5>Informativo</h5>
+					<nav>
+						<ol>
+							<li><a href="#" Title="Mais Lidos 1">Mais Lidos 1</a></li>
+							<li><a href="#" Title="Mais Lidos 2">Mais Lidos 2</a></li>
+							<li><a href="#" Title="Mais Lidos 3">Mais Lidos 3</a></li>
+							<li><a href="#" Title="Mais Lidos 4">Mais Lidos 4</a></li>
+							<li><a href="#" Title="Mais Lidos 5">Mais Lidos 5</a></li>
+							<li><a href="#" Title="Mais Lidos 6">Mais Lidos 6</a></li>
+							<li><a href="#" Title="Mais Lidos 7">Mais Lidos 7</a></li>
+							<li><a href="#" Title="Mais Lidos 8">Mais Lidos 8</a></li>
+							<li><a href="#" Title="Mais Lidos 9">Mais Lidos 9</a></li>
+							<li><a href="#" Title="Mais Lidos 10">Mais Lidos 10</a></li>
+						</ol>
+					</nav>
+				</aside>
+				<div class="anuncios">
+					<img src="imagens/anuncio1.jpg" title="Anuncio 1">
+				</div>
+				<div class="anuncios esquerdaN">
+					<img src="imagens/anuncio2.jpg" title="Anuncio 2">
+				</div>
+				<div class="anuncios">
+					<img src="imagens/anuncio3.jpg" title="Anuncio 3">
+				</div>
+				<div class="anuncios esquerdaN">
+					<img src="imagens/anuncio4.jpg" title="Anuncio 4">
+				</div>
+			</section>
+			<section class="q_direita">
+				<aside class="destaques">
+					<h5>Destaques</h5>
+					<div class="foto-destaque">
+						<img src="imagens/bracos.jpg" title="Fotinha">
+					</div>
+					<div class="caixa_des"><h1>Desenvolvendo Músculos</h1>
+						<p class="direitaN">Técnicas para desenvolver a musculatura ideal de um "monstro"</p>
+						<a href="#" title="Leia Mais" class="leiamais">Leia Muito Mais</a>
+					</div>
+				</aside>
+				<article class="artigos">
+					<h4>Hipertrofia</h4>
+					<h2>Hipertrofia</h2>
+					<p>É o aumento do tamanho de um órgão como consequência do aumento das funções celulares. A mais comum acontece na musculatura (hipertrofia muscular) e pode ser provocada por fatores biológicos, como o crescimento na fase de puberdade, a dilatação do útero e etc.</p>
+					<a href="#" title=" Leia Mais" Class="leiamais"> Leia Mais Ainda</a>
+					<h6>Mais Artigos</h6>
+					<ul>
+						<li><a href="#" title="Artigo 1"> Artigo 1</a></li>
+						<li><a href="#" title="Artigo 2"> Artigo 2</a></li>
+						<li><a href="#" title="Artigo 3"> Artigo 3</a></li>
+					</ul>
+				</article>
+				
+				<article class="artigos">
+					<h4>Definição</h4>
+					<h2>Definição Muscular</h2>
+					<p>O treino para definição muscular pode fazer a pessoa ganhar peso (de músculos), mesmo 							perdendo gordura. Além de cuidar da alimentação, é importante realizar exercícios 						aeróbicos para transformar a gordura no principal combustível para o corpo.</p>
+					<a href="#" title=" Leia Mais" Class="leiamais"> Leia Mais Ainda</a>
+					<h6>Mais Artigos</h6>
+					<ul>
+						<li><a href="#" title="Artigo 1"> Artigo 1</a></li>
+						<li><a href="#" title="Artigo 2"> Artigo 2</a></li>
+						<li><a href="#" title="Artigo 3"> Artigo 3</a></li>
+					</ul>
+				</article>
+			</section>
+			<footer class="rodape">
+				<p>Copyright 2019 PowerHouse Fitness. Desenvolvido por <a href="#">Jean Vieira</a></p>
+			</footer>
+		</main>
+	</body>
+</html>

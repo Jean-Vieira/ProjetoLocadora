@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <title> Listagem de contatos</title>
+        <link rel="stylesheet" type="text/css" href="css/estilizacao.css">
+        <link rel="stylesheet" type="text/css" href="css/tabelas.css">
+        
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Listagem Completa</h1>
+
+           
+            <table class="blueTable" style="border-style: double;" >
+                <thead style="border-style: solid; border-color:#2559a6; border-width:3;">
+                    <tr>
+                        <th>ID</th>
+                        <th>Titulo</th>
+                        <th>Direção</th>
+                        <th>Atores Principais</th>
+                        <th>Categoria</th>
+                        <th>Censura</th>
+                        <th>Dublado</th>
+                        <th>Legendado</th>
+                        <th>Sinopse</th>
+                        <th>Valor Locação</th>
+                        <th>Cartaz</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                <th:block th:each="filme : ${filmes}">
+                    <tr>
+                        <td th:text="${filme.id}"></td>
+                      	<td th:text="${filme.titulo}"></td>
+                      	<td th:text="${filme.direcao}"></td>
+                      	<td th:text="${filme.atoresPrincipais}"></td>
+                      	<td th:text="${filme.categoria}"></td>
+                      	<td th:text="${filme.censura}"></td>
+                      	<td th:text="${filme.dublado}"></td>
+                      	<td th:text="${filme.legendado}"></td>
+                      	<td th:text="${filme.sinopse}"></td>
+                      	<td th:text="${filme.valorLocacao}"></td>
+                      	                      	
+                        <!-- <td th:text="${filme.cartaz}"><img src="imagens/sem-foto-img.png"></td>-->
+                        <td><img th:src="${filme.cartaz}"></td>
+                         
+                        
+                    </tr>
+
+                </th:block>
+                </tbody>
+            </table>
+        </div>
+
+        
+    </body>
+</html>
